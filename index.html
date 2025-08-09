@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Eichhorn - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Daniel Eichhorn</h1>
+        <p>Informatikstudent · Softwareentwickler · Reisefan </p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Über mich</h2>
+            <p>- Hi, mein Name ist Daniel Eichhorn, bin <span id="age">24</span> Jahre alt und mache gerade meinen Bachelor in Informatik. Bevor ich mein Studium begann, habe ich 2022 meine 3-jährige Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen. Aktuell bin ich neben meinem Studium als IT-Werkstudent tätig.</p>
+            <p>- Schon seit meiner Kindheit fasziniert mich Technologie und Programmierung. Besonders interessiere ich mich für neue Technologien und aktuelle Entwicklungen in diesem Bereich.</p>
+            <p>- In meiner Freizeit experimentiere ich gerne und arbeite an eigenen Projekten. Insbesondere Mikrocontroller haben es mir angetan :)</p>
+            <p>- Zu meinen weiteren Interessen zählen das Reisen und Kochen.</p>
+        </section>
+
+        <section>
+            <h2>Kentnisse</h2>
+            <p>- Hauptsächlich programmiere ich in Java, C und Python, doch auch Sprachen wie Rust oder JavaScript/TypeScript fließen häufig in meinen Projekten mit ein</p>
+            <p>- Datenbanktechnisch verwende ich meist MongoDB oder PostgreSQL</p>
+            <p>- Docker</p>
+
+        </section>
+
+        <section>
+            <h2>Links</h2>
+            <p>Github: <a href="https://github.com/EichhornD">EichhornD</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="year">2025</span> - Daniel Eichhorn</p>
+    </footer>
+
+    <script>
+        age_span = document.getElementById("age")
+        year_span = document.getElementById("year")
+        year_span.innerText = new Date().getFullYear()
+        age_span.innerText = new Date().getFullYear()-2001 //Ist nicht ganz korrekt aber wurscht xd
+    </script>
+</body>
+</html>
